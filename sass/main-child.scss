@@ -1,0 +1,198 @@
+/*
+Theme Name: centr-allon4;
+Author: Alexander Shamarin
+Description: centr-allon4;
+Version: 1.0
+*/
+
+img {height: auto;}
+.hide {display: none;}
+.button {flex-shrink: 0;}
+
+@import 'base/icons';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'vendors/swiper';
+@import 'vendors/jquery.fancybox';
+@import 'base/layout';
+
+.pb {
+	@import 'base/placeholders';
+	@import 'base/reset';
+	@import 'base/typography';
+	@import 'base/grid';
+	@import 'base/forms';
+	//@import 'base/buttons';
+	@import 'base/modals';
+
+
+	@import 'modules/sliders';
+	@import 'modules/survey';
+	@import 'pages/lp';
+}
+
+@import 'modules/header';
+@import 'modules/s-intro-header';
+@import 'modules/breadcrumbs';
+@import 'modules/experts';
+@import 'modules/hero';
+@import 'modules/hotspot';
+@import 'modules/top-menu__list2';
+@import 'modules/advantages';
+@import 'modules/product-benefit';
+@import 'modules/wpcf7';
+@import 'modules/all-works';
+@import 'modules/card';
+
+.page-template section.paragraph .top-padding-18 {padding-top: 18px;}
+.page-template section.paragraph .bottom-padding-18 {padding-bottom: 18px;}
+.page-template section.paragraph .top-padding-none {padding-top: 0;}
+.page-template section.paragraph .bottom-padding-none {padding-bottom: 0;}
+
+.green-riptide-background {background-color: #7cdaba;}
+
+.hero .hero-media .image {
+
+	@include res(xs){
+		object-position: 90% 50%;
+	}
+}
+
+.spacing-all {
+
+	@include res(m){
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
+
+	@include res(xs){
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+
+}
+
+[type="submit"]:not(.default) {
+	@include res(xxs){
+		white-space: break-spaces;
+		width: 100%;
+	}
+}
+
+.hero,
+.spacing-all,
+.section-swiper-slider {
+
+	@include res(xs){
+		h2 {font-size: 7.2vw;}
+	}
+
+}
+
+.paragraph--type--header-text .wysiwyg p {
+
+	@include res(xs){
+		font-size: 18px;
+	}
+
+}
+
+.paragraph--type--text .spacing-all {padding-top: 36px;}
+
+.sidebar__inner {
+	width: inherit;
+	transform: translateZ(0px);
+	will-change: transform;
+}
+
+.two-columns--right {
+
+	@include res(l) {
+		display: none;
+	}
+}
+
+.red2-cerise-background {background-color: #d33738;}
+
+.action__with-arrow2.action__button {
+	padding-left: 54px;
+	background-position: left 2em center;
+	background-size: 0.5em 1em;
+	background-image: url(icons/arrow-left.svg);
+	background-repeat: no-repeat;
+}
+
+.action__with-arrow2:hover:not(.action__link) {
+
+}
+
+.action__with-arrow2:focus,
+.action__with-arrow2:hover:not(.action__link) {
+	background-image: url(icons/arrow-left-white.svg);
+}
+
+.amethyst-background {background-color: #87A2D5;}
+.grey2-desert-storm-background {background-color: #dfdfdf;}
+
+.action__button--right {
+	margin-right: 0 !important;
+	margin-left: auto;
+}
+
+
+
+.gallery-slider {
+
+   overflow: hidden;
+
+	.swiper-wrapper {
+		padding: 0;
+	}
+}
+
+
+
+.s-doctor-slider {
+
+   overflow: hidden;
+
+	.swiper-wrapper {
+		padding: 0;
+	}
+
+}
+
+.doctor-slider {
+
+	&__item {
+		text-align: center;
+		overflow: hidden;
+		padding: 0 0 25px;
+	}
+
+	&__link {
+		display: block;
+	}
+
+	&__img {
+		display: block;
+		margin: 0 auto 25px;
+		border-radius: 50%;
+		max-width: 90%;
+
+		@include res(s) {
+			max-width: 70%;
+		}
+	}
+
+	&__name {
+		font-size: 20px;
+		font-weight: bold;
+		margin: 0 0 7px;
+	}
+
+	&__job {
+		font-size: 16px;
+		color: #6f6f6f;
+	}
+}

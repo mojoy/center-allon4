@@ -1,0 +1,51 @@
+.breadcrumbs {
+	margin-bottom: 25px;
+	padding: 15px 72px 0;
+
+	@include res(l){
+		padding-left: 36px;
+		padding-right: 36px;
+	}
+
+	@include res(m){
+		margin-bottom: 15px;
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+
+	@include res(xs){
+		display: none;
+	}
+
+	a {
+		text-decoration: underline;
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
+	}
+}
+
+.back {
+	display: none;
+	padding: 0 18px;
+
+	@include res(xs){
+		display: flex;
+	}
+
+}
+
+.action__with-arrow.action__button.back__btn {
+	padding-right: 36px;
+	padding-left: 54px;
+	background-position: left 2em center;
+	background-size: 0.5em 1em;
+	background-image: url(icons/arrow-left.svg);
+	background-repeat: no-repeat;
+
+	&:hover {
+		background-image: url(icons/arrow-left-white.svg);
+	}
+}

@@ -1,0 +1,16 @@
+
+.header.hide {
+	display: block;
+}
+
+.header__top-header {
+	min-height: 45px;
+
+	@include res(l){
+		min-height: 40px;
+	}
+}
+
+.top-header .menu-collection__menu {
+	margin-right: 0;
+}

@@ -1,0 +1,33 @@
+
+
+.advantages {
+
+	&__list {
+		margin-bottom: 50px;
+
+		@include res(c) {
+			font-size: 16px;
+		}
+
+	}
+
+	&__item {
+		border-left: 2px solid #c9a970;
+		text-align: center;
+		display: flex;
+		align-items: center;
+
+		@include res(m){
+
+			margin-bottom: 30px;
+
+			&:nth-child(3) {
+				border: none;
+			}
+		}
+
+		&:first-child {
+			border-left: none;
+		}
+	}
+}

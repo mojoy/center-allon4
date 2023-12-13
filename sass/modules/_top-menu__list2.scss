@@ -1,0 +1,81 @@
+
+
+.top-menu__list2 {
+
+	display: flex;
+	flex-wrap: wrap;
+
+	.top-menu__link--v1 {
+		background-color: #FED880;
+	}
+
+	.top-menu__link--v2 {
+		background-color: #79E3BF;
+	}
+
+	.top-menu__link--v3 {
+		background-color: #FFA38B;
+	}
+
+	.top-menu__link--v4 {
+		background-color: #87A2D5;
+	}
+
+   .top-menu__item {
+      @include res(s){
+         margin-left: 12px;
+      }
+   }
+
+
+	.top-menu__link {
+		color: #000;
+		text-align: center;
+		padding: 10px 18px;
+		min-width: 220px;
+		height: auto;
+		display: flex;
+		align-items: center;
+
+		@include res(l){
+			min-width: auto;
+			padding: 10px;
+		}
+
+	}
+
+	.icon {
+      width: 20px;
+      height: 20px;
+      margin: 0 5px 0 0;
+
+		@include res(l){
+			margin: 0
+		}
+
+
+		&--doctor {
+			background: url(icons/icon-doctor.svg) no-repeat;background-size: cover;
+		}
+
+		&--video {
+			background: url(icons/icon-video-chat.svg) no-repeat;background-size: cover;
+		}
+
+		&--faq {
+			background: url(icons/icon-faq.svg) no-repeat;background-size: cover;
+		}
+
+		&--phone {
+			background: url(icons/icon-phone.svg) no-repeat;background-size: cover;
+		}
+
+	}
+
+	.top-menu__text {
+		@include res(l){
+			display: none;
+		}
+	}
+
+}

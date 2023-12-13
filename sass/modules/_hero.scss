@@ -1,0 +1,195 @@
+
+
+.hero {
+
+
+	@media (min-width: 1025px) {
+		min-height: 550px;
+	}
+
+	&--small {
+		@media (min-width: 1025px) {
+			min-height: 420px;
+		}
+	}
+
+
+
+
+	.hero-content {
+
+
+		@media (min-width: 769px) {
+			h1 {
+				font-size: 38px;
+			}
+		}
+
+
+
+		h1 {
+/*
+			@include res(xl){
+				font-size: 3.7vw;
+			}
+
+
+
+			@include res(m){
+				font-size: 3.8vw;
+			}
+
+
+			@include res(s){
+				font-size: 8.8vw;
+			}
+*/
+		}
+
+
+
+	}
+
+	.hero-media .image {
+		//object-position: 100% 100%;
+		//object-fit: scale-down;
+
+
+		@media (min-width: 769px) and (max-width: 1024px) {
+			//object-position: center center;
+		}
+
+		@include res(m){
+			object-position: 80% bottom;
+		}
+
+	}
+
+
+
+
+}
+
+
+
+
+
+.hero-content__cost {
+	display: inline-block;
+	background: #fff;
+	margin: 0 0 0 -72px;
+	padding: 25px 100px 25px 72px;
+	border-radius: 0 39px 39px 0;
+	font-size: 34px;
+	position: relative;
+	font-weight: bold;
+	width: calc(100% + 50px);
+	text-align: center;
+
+	@include res(c){
+		font-size: 25px;
+		padding-right: 95px;
+	}
+
+	@media (max-width: 1280px) {
+		//font-size: 23px;
+	}
+
+	@include res(m){
+		font-size: 4.5vw;
+		padding: 20px 18vw 20px 72px;
+		width: auto;
+	}
+
+	@include res(s){
+		font-size: 5.5vw;
+		margin-left: 0;
+		border-radius: 39px;
+		padding-left: 37px;
+	}
+
+	&-image {
+		position: absolute;
+		right: -24px;
+		bottom: 0;
+		border-radius: 50%;
+		height: 130%;
+		width: auto;
+
+		@media (max-width: 1280px) {
+			height: 120%;
+		}
+	}
+}
+
+
+
+
+.hero-content__col-cost {
+
+	@include res(m){
+		display: flex;
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+
+}
+
+.hero-content__col-button {
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	@include res(s){
+		justify-content: center;
+	}
+
+	.action__with-arrow.action__button {
+		margin: 0;
+	}
+
+}
+
+
+
+
+@media (min-width: 1025px) {
+	.cards section.hero,
+	.cards section.layout-default {
+		margin: 0 -54px;
+	}
+
+	.cards section.layout-default + section.layout-default {
+		margin: 0 -54px 74px;
+	}
+
+	.cards .paragraph--two-columns section.hero {
+		margin: 0;
+	}
+}
+
+
+.cards section.hero,
+.cards section.layout-default {
+	@include res(m){
+		margin: 0 -18px;
+	}
+}
+
+.cards section.layout-default + section.layout-default {
+	@include res(m){
+		margin: 0 -18px 35px;
+	}
+}
+
+.cards .paragraph--two-columns section.hero {
+	@include res(m){
+		margin: 0;
+	}
+}
+
+
+.hotspot.hotspot-active .hotspot__content {
+	visibility: visible;
+}

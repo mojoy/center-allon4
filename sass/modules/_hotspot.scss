@@ -1,0 +1,46 @@
+.pb .hotspot__spot {
+	padding: 0;
+}
+
+.two-columns.row {
+	margin-left: 0;
+	margin-right: 0;
+
+	> [class*="grid"] {
+		padding-left: 0;
+		padding-right: 0;
+		position: relative;
+	}
+
+	.product-benefit__hotspots {
+		padding-left: 8%;
+	}
+
+	.hotspot {
+		display: flex;
+		align-items: center;
+		margin-bottom: 30px;
+
+		&__title {
+			padding: 0 15px 0 0;
+		}
+
+		&__content {
+			width: calc(100% - 72px - 13%);
+		}
+
+	}
+
+
+	@media (min-width: 769px) {
+		.hotspot__content h3 {
+			font-size: 20px;
+			margin-bottom: 15px;
+		}
+		.hotspot__content p {
+			font-size: 19px;
+			margin: 0;
+		}
+
+	}
+}

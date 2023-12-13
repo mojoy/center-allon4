@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8c7a6ff1-23e1-4fda-a2c0-083bf8c970a1" name="centr-allon4" url="http://ftp-srv67361.hts.ru">
+        <fileTransfer rootFolder="/htdocs/centr-allon4.ru/wp-content/themes/centr-allon4" host="ftp-srv67361.hts.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
