@@ -88,6 +88,17 @@
 	}
 }
 
+.action__button {
+   border: 1px solid #ff5274 !important;
+   color: #ff5274 !important;
+
+   &:hover {
+      background: #ff5274 !important;
+      color: #FFF !important;
+      border-color: #ff5274 !important;
+   }
+}
+
 .button--left-icon{
 	.i{
 		margin-left: 0;

@@ -196,5 +196,13 @@ function mythem_enqueue_style() {
 
 add_action('wp_enqueue_scripts', 'mythem_enqueue_style', 5);
 
-
-
+/*
+function redirect_non_logged_in_users() {
+   if ( ! is_user_logged_in() && ! is_page('wp-login.php') ) {
+      $redirect_url = home_url( '/wp-login.php' );
+      wp_redirect( $redirect_url );
+      exit;
+   }
+}
+add_action( 'template_redirect', 'redirect_non_logged_in_users' );
+*/

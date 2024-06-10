@@ -33,12 +33,12 @@
 		outline: none;
 
 		&:before{
-			background: #A6A6A6;
+			background: #ff5274;
 		}
 
 		&:after{
 			transform: rotate(45deg) scale(1.2);
-			border-color: #A6A6A6;
+			border-color: #ff5274;
 		}
 	}
 
@@ -84,7 +84,7 @@
 		top: 0;
 		right: 0;
 		bottom: 0;
-		background: #A6A6A6;
+		background: #72dbd4;
 		border-radius: 5px;
 		z-index: 1;
 		transform: rotate(45deg);
@@ -98,13 +98,13 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		border: 1px solid #A6A6A6;
+		border: 1px solid #72dbd4;
 		z-index: 1;
 		transform: rotate(45deg);
 		border-radius: 5px;
 		transition: all 0.3s ease;
 	}
-	
+
 	.i{
 		position: relative;
 		z-index: 2;
@@ -134,7 +134,7 @@
 	transition: color 0.3s ease;
 
 	&:hover{
-		color: #A6A6A6;
+		color: #72dbd4;
 	}
 
 	&:focus{
@@ -172,7 +172,7 @@
 		width: 20px;
 		height: 20px;
 		margin: 0 9px;
-		border: 1px solid #A6A6A6;
+		border: 1px solid #72dbd4;
 		background: #FFF;
 		opacity: 1;
 		transform: rotate(45deg);
@@ -185,8 +185,8 @@
 		}
 
 		&.swiper-pagination-bullet-active{
-			background: #FFA38B;
-			border: #FFA38B;
+			background: #ff5274;
+			border: #ff5274;
 		}
 
 		&:focus{
@@ -194,7 +194,7 @@
 		}
 
 		&:hover{
-			border: 1px solid #FFA38B;
+			border: 1px solid #ff5274;
 		}
 	}
 }
@@ -227,7 +227,7 @@
 
 		&:hover{
 			&:before{
-				background: #A6A6A6;
+				background: #72dbd4;
 			}
 		}
 
@@ -256,7 +256,7 @@
 			z-index: 1;
 			width: 45px;
 			height: 2px;
-			background: #A6A6A6;
+			background: #72dbd4;
 			right: calc(100% + 10px);
 			transition: transform 0.3s ease;
 			transform: scale3d(0,1,1);
@@ -283,7 +283,7 @@
 			background: transparent;
 
 			&:before{
-				background: #A6A6A6;
+				background: #72dbd4;
 			}
 			&:after{
 				transform: scale3d(1,1,1);
@@ -305,7 +305,7 @@
 	z-index: 10;
 	width: 20px;
 	height: 20px;
-	background: #A6A6A6;
+	background: #72dbd4;
 	border-radius: 15px;
 
 	&:before{
@@ -356,11 +356,11 @@
 
 	&:focus{
 		background: transparent;
-		color: #A6A6A6;
+		color: #72dbd4;
 	}
 
 	&.active{
-		border: 1px solid #A6A6A6;
+		border: 1px solid #72dbd4;
 		pointer-events: none;
 	}
 }

@@ -297,7 +297,7 @@ get_header(); ?>
 							<div class="paragraph-header paragraph-header--center">
 								<div class="wysiwyg">
 									<h2>Найти нужное решение — просто.</h2>
-									<p>Узнайте больше о решениях Nobel Biocare в зависимости от показаний, типа продукции или цифрового решения.</p>
+									<p>Узнайте больше о возможностях использования продукции Nobel Biocare в зависимости от показаний, типа продукции или цифрового решения.</p>
 								</div>
 							</div>
 							<div class="products-overview">
@@ -449,7 +449,7 @@ get_header(); ?>
 					<div class="spacing-all top-padding-default bottom-padding-default gallery-slider pb s-doctor-slider">
 						<div class="paragraph-header paragraph-header--center">
 							<div class="wysiwyg">
-								<h2>Российские специалисты центров экспертизы All-on-4®</h2>
+								<h2>Команда экспертов в области сложного восстановления зубов с использованием Nobel Biocare</h2>
 							</div>
 						</div>
 						<div class="swiper-slider__wrapper">
@@ -477,9 +477,9 @@ get_header(); ?>
 									<div class="swiper-slide">
 										<div class="doctor-slider__item">
 
-											<img src="https://centr-allon4.ru/wp-content/uploads/2023/09/maksim-kopylov-exp.webp" width="300" height="300" alt="Максим Копылов" class="doctor-slider__img" loading="lazy" decoding="async">
-											<div class="doctor-slider__name">Максим Копылов</div>
-											<div class="doctor-slider__job">хирург-имплантолог, пародонтолог</div>
+											<img src="https://centr-allon4.ru/wp-content/uploads/2023/09/kurochkin-exp.webp" width="300" height="300" alt="Максим Копылов" class="doctor-slider__img" loading="lazy" decoding="async">
+											<div class="doctor-slider__name">Константин Курочкин</div>
+											<div class="doctor-slider__job">Стоматолог-ортопед</div>
 
 										</div>
 									</div>
@@ -531,6 +531,9 @@ get_header(); ?>
 						<div class="swiper-slider__wrapper">
 							<div class="photo-gallery swiper-container">
 								<div class="swiper-wrapper">
+                           <div class="swiper-slide">
+                              <a href="<?php bloginfo('template_url'); ?>/img/photo-gallery-main/centr-dlya-allon4.webp" data-fancybox="photo-gallery-main" title="Обучение"><img src="<?php bloginfo('template_url'); ?>/img/photo-gallery-main/centr-dlya-allon4.webp" srcset="<?php bloginfo('template_url'); ?>/img/photo-gallery-main/centr-dlya-allon4.webp" width="800" height="460" alt="Обучение" class="gallery-slider__img" loading="lazy" decoding="async"></a>
+                           </div>
 									<div class="swiper-slide">
 										<a href="<?php bloginfo('template_url'); ?>/img/photo-gallery-main/obuchenie-chernov-1.webp" data-fancybox="photo-gallery-main" title="Обучение"><img src="<?php bloginfo('template_url'); ?>/img/photo-gallery-main/obuchenie-chernov-1.webp" srcset="<?php bloginfo('template_url'); ?>/img/photo-gallery-main/obuchenie-chernov-1-640.webp" width="800" height="460" alt="Обучение" class="gallery-slider__img" loading="lazy" decoding="async"></a>
 									</div>

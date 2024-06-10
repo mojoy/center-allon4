@@ -12,10 +12,10 @@
    <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
    <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
    <meta charset="<?php bloginfo('charset'); ?>"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="google-site-verification" content="3bo45A2XJZJEd5_JtC3nb4IHyL7nNCDjlUUMRbpeu3U" />
-	<meta name="yandex-verification" content="b3a3da003726e2e5" />
-	<link rel="icon" href="<?php bloginfo('template_url'); ?>/favicon/favicon.ico" type="image/vnd.microsoft.icon">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="google-site-verification" content="3bo45A2XJZJEd5_JtC3nb4IHyL7nNCDjlUUMRbpeu3U" />
+   <meta name="yandex-verification" content="b3a3da003726e2e5" />
+   <link rel="icon" href="<?php bloginfo('template_url'); ?>/favicon/favicon.ico" type="image/vnd.microsoft.icon">
    <style>
       body {font-size: 21px;line-height: 1.5;}
       li {margin: 0 0 20px;}
@@ -23,62 +23,66 @@
       @media (max-width: 800px) { .main-content { padding-top: 115px; } }
       .swiper-container {overflow: hidden;}
    </style><?php if (strpos($_SERVER['HTTP_USER_AGENT'], 'Chrome-Lighthouse') != true) { ?>
-	<link rel="stylesheet" media="all" href="<?php bloginfo('template_url'); ?>/css/main.css?v=1" /><?php } ?>
-	<?php wp_head(); ?>
+      <link rel="stylesheet" media="all" href="<?php bloginfo('template_url'); ?>/css/main.css?v=1" /><?php } ?>
+   <?php wp_head(); ?>
 </head>
 <body id="page-body" <?php body_class(); ?>>
 <header class="header">
-	<div class="header__top-header">
-		<div class="top-header">
-			<div class="top-header__inner inner center-align">
-				<div class="menu-collection">
-					<div class="menu-collection__menu">
-						<div class="top-menu">
-							<nav class="top-menu__navigation">
-								<ul class="top-menu__list2">
-									<li class="top-menu__item">
-										<a class="top-menu__link top-menu__link--v1" title="Найти врача" href="/eksperty-all-on-4/">
-											<span class="icon icon--doctor medium"></span>
-											<span class="top-menu__text">Найти врача</span>
-										</a>
-									</li>
-									<li class="top-menu__item">
-										<a class="top-menu__link top-menu__link--v2 fancy-modal" href="#modal-callback" rel="nofollow" title="Видео консультация с экспертом">
-											<span class="icon icon--video medium"></span>
-											<span class="top-menu__text">Видео консультация с экспертом</span>
-										</a>
-									</li>
-									<li class="top-menu__item">
-										<a class="top-menu__link top-menu__link--v3" title="Частые вопросы" href="/chastye-voprosy/">
-											<span class="icon icon--faq medium"></span>
-											<span class="top-menu__text">Частые вопросы</span>
-										</a>
-									</li>
-									<li class="top-menu__item">
-										<a href="tel:88007071416" title="Звоните" class="top-menu__link top-menu__link--v4">
-											<span class="icon icon--phone medium"></span>
-											<span class="top-menu__text">8 (800) 707-14-16</span>
-										</a>
-									</li>
-								</ul>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="header__bottom-header">
-		<div class="bottom-header__wrapper">
-			<div class="bottom-header inner center-align">
-				<a class="bottom-header__logo spacing" href="/">
-					<img class="logo logo-large bottom-header__logo--desktop image" src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="<?php bloginfo('name')?>" loading="auto" />
-					<img class="logo logo-medium bottom-header__logo--mobile image" src="<?php bloginfo('template_url'); ?>/img/logo-mobile.svg" alt="<?php bloginfo('name')?>" loading="auto" />
-					<div class="visually-hidden">
-						Nobel Biocare
-					</div>
-				</a>
-				<!--
+   <div class="header__top-header">
+      <div class="top-header">
+         <div class="top-header__inner inner center-align">
+            <div class="menu-collection">
+               <div class="menu-collection__menu">
+                  <div class="top-menu">
+                     <nav class="top-menu__navigation">
+                        <ul class="top-menu__list2">
+                           <li class="top-menu__item">
+                              <a class="top-menu__link top-menu__link--v1" title="Найти врача" href="/eksperty-all-on-4/">
+                                 <span class="icon icon--doctor medium"></span>
+                                 <span class="top-menu__text">Найти врача</span>
+                              </a>
+                           </li>
+                           <li class="top-menu__item">
+                              <a class="top-menu__link top-menu__link--v2 fancy-modal" href="#modal-callback" rel="nofollow" title="Видео консультация с экспертом">
+                                 <span class="icon icon--video medium"></span>
+                                 <span class="top-menu__text">Видео консультация с экспертом</span>
+                              </a>
+                           </li>
+                           <li class="top-menu__item">
+                              <a class="top-menu__link top-menu__link--v3" title="Частые вопросы" href="/chastye-voprosy/">
+                                 <span class="icon icon--faq medium"></span>
+                                 <span class="top-menu__text">Частые вопросы</span>
+                              </a>
+                           </li>
+                           <li class="top-menu__item">
+                              <a href="tel:88007071416" title="Звоните" class="top-menu__link top-menu__link--v4">
+                                 <span class="icon icon--phone medium"></span>
+                                 <span class="top-menu__text">8 (800) 707-14-16</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="header__bottom-header">
+      <div class="bottom-header__wrapper">
+         <div class="bottom-header inner center-align">
+            <a href="https://smile-at-once.ru/" title="" target="_blank" class="logo__smile">
+               <img src="https://smile-at-once.ru/data/teeth_new/img/logo.svg" alt="Новые зубы и улыбка сразу" title="Новые зубы и улыбка сразу" width="183" height="40" class="top-panel__logo-pc" itemprop="logo image" loading="auto">
+            </a>
+            <a class="bottom-header__logo spacing" href="/">
+               <img class="logo logo-large bottom-header__logo--desktop image" src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="<?php bloginfo('name')?>" loading="auto" />
+               <img class="logo logo-medium bottom-header__logo--mobile image" src="<?php bloginfo('template_url'); ?>/img/logo-mobile.svg" alt="<?php bloginfo('name')?>" loading="auto" />
+               <div class="visually-hidden">
+                  Nobel Biocare
+               </div>
+            </a>
+
+            <!--
 				<div class="bottom-header__content">
 
 					<div class="search">
@@ -152,15 +156,15 @@
 																<h2 class="sidebar-menu__title h4 bold">Наши преимущества</h2>
 
 																<?php
-																wp_nav_menu( array(
-																	'theme_location'  => 'main-nav1',
-																	'menu_class'      => 'sidebar-menu__items navigation-list',
-																	'echo'            => true,
-																	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-																	'depth'           => 0,
-																	//'walker'          => new Sidebar_Walker_Nav_Menu() // Добавьте свой класс Walker, если необходимо
-																) );
-																?>
+            wp_nav_menu( array(
+               'theme_location'  => 'main-nav1',
+               'menu_class'      => 'sidebar-menu__items navigation-list',
+               'echo'            => true,
+               'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+               'depth'           => 0,
+               //'walker'          => new Sidebar_Walker_Nav_Menu() // Добавьте свой класс Walker, если необходимо
+            ) );
+            ?>
 
 															</div>
 
@@ -205,15 +209,15 @@
 																<h2 class="sidebar-menu__title h4 bold">Клинические решения</h2>
 
 																<?php
-																wp_nav_menu( array(
-																	'theme_location'  => 'main-nav2',
-																	'menu_class'      => 'sidebar-menu__items navigation-list',
-																	'echo'            => true,
-																	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-																	'depth'           => 0,
-																	//'walker'          => new Sidebar_Walker_Nav_Menu() // Добавьте свой класс Walker, если необходимо
-																) );
-																?>
+            wp_nav_menu( array(
+               'theme_location'  => 'main-nav2',
+               'menu_class'      => 'sidebar-menu__items navigation-list',
+               'echo'            => true,
+               'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+               'depth'           => 0,
+               //'walker'          => new Sidebar_Walker_Nav_Menu() // Добавьте свой класс Walker, если необходимо
+            ) );
+            ?>
 
 															</div>
 
@@ -258,15 +262,15 @@
 																<h2 class="sidebar-menu__title h4 bold">Лабораторные решения</h2>
 
 																<?php
-																wp_nav_menu( array(
-																	'theme_location'  => 'main-nav3',
-																	'menu_class'      => 'sidebar-menu__items navigation-list',
-																	'echo'            => true,
-																	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-																	'depth'           => 0,
-																	//'walker'          => new Sidebar_Walker_Nav_Menu() // Добавьте свой класс Walker, если необходимо
-																) );
-																?>
+            wp_nav_menu( array(
+               'theme_location'  => 'main-nav3',
+               'menu_class'      => 'sidebar-menu__items navigation-list',
+               'echo'            => true,
+               'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+               'depth'           => 0,
+               //'walker'          => new Sidebar_Walker_Nav_Menu() // Добавьте свой класс Walker, если необходимо
+            ) );
+            ?>
 
 															</div>
 
@@ -1025,9 +1029,9 @@
 					</nb-sidebar-menu>
 				</div>
 			-->
-			</div>
-		</div>
-	</div>
+         </div>
+      </div>
+   </div>
 </header>
 
 
