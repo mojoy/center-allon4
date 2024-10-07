@@ -347,6 +347,67 @@ get_header(); ?>
 								<div class="cards-wrapper">
 									<div class="cards">
 										<ul class="cards-list">
+
+
+                                 <?php
+                                 $args = array(
+                                    'orderby'          => 'post_date',
+                                    'order'            => 'DESC',
+                                    'post_type'        => 'post',
+                                    'post_status'      => 'publish',
+                                    'posts_per_page'	=> 6,
+                                 );
+                                 $pc_new = new WP_Query($args);
+                                 if ( $pc_new->have_posts() ) :
+                                    while ($pc_new->have_posts()) : $pc_new->the_post();
+                                       //$url = get_field('link_youtube');
+                                       ?>
+
+
+                                       <li class="card">
+                                          <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+
+                                          <div class="product-detail">
+                                             <div class="card-img">
+                                                <div class="field--name-field-shared-teaser-image field--type-entity-reference field--label-hidden">
+                                                   <div>
+                                                      <div class="field--name-field-media-image field--type-image field--label-hidden">
+                                                         <?php
+                                                         $post_id = get_the_ID();
+                                                         $thumbnail_url = get_the_post_thumbnail_url( $post_id, 'thumbnail' );
+                                                         echo '<img src="' . $thumbnail_url . '" width="440" height="248" alt="'. get_the_title() .'" loading="lazy" decoding="async">';
+                                                         ?>                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="card-text">
+                                                <h2 class="card-title h4 bold">
+                                                   <span><?php the_title() ?></span>
+                                                </h2>
+                                                <div class="card-description">
+                                                   <div class="field--name-field-shared-teaser-content field--type-text-long field--label-hidden">
+                                                      <p>
+                                                         <?php
+                                                         if( has_excerpt() ) {
+                                                            echo get_the_excerpt();
+                                                         }
+                                                         ?>
+                                                      </p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          </a>
+                                       </li>
+                                    <?php endwhile;
+                                 else: ?>
+                                    <p style="color: #ED1C24;font-size: 25px; display: none">Извините, нет записей, удовлетворяющих вашим условиям.</p>
+                                 <?php endif; ?>
+
+
+
+
+<!--
 											<li class="card">
 												<div class="product-detail">
 													<div class="card-img">
@@ -371,7 +432,7 @@ get_header(); ?>
 														</div>
 													</div>
 												</div>
-											</li>
+											</li>-->
 											<li class="card">
 												<div class="product-detail">
 													<div class="card-img">
@@ -447,69 +508,20 @@ get_header(); ?>
 
 
 					<div class="spacing-all top-padding-default bottom-padding-default gallery-slider pb s-doctor-slider">
-						<div class="paragraph-header paragraph-header--center">
-							<div class="wysiwyg">
-								<h2>Команда экспертов в области сложного восстановления зубов с использованием Nobel Biocare</h2>
-							</div>
-						</div>
-						<div class="swiper-slider__wrapper">
-							<div class="doctor-slider swiper-container">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
 
-										<div class="doctor-slider__item">
-											<a href="https://smile-at-once.ru/doctors/zhilenko-evgenij-aleksandrovich.html" target="_blank" rel="noopener" class="doctor-slider__link">
-												<img src="https://centr-allon4.ru/wp-content/uploads/2023/09/zhilenko-exp.webp" width="300" height="300" alt="Евгений Жиленко" class="doctor-slider__img" loading="lazy" decoding="async">
-												<div class="doctor-slider__name">Евгений Жиленко</div>
-												<div class="doctor-slider__job">челюстно-лицевой хирург, имплантолог</div>
-											</a>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="doctor-slider__item">
-											<a href="https://smile-at-once.ru/doctors/vasiliev-aleksandr-aleksandrovich.html" target="_blank" rel="noopener" class="doctor-slider__link">
-												<img src="https://centr-allon4.ru/wp-content/uploads/2023/09/vasiliev-exp.webp" width="300" height="300" alt="Александр Васильев" class="doctor-slider__img" loading="lazy" decoding="async">
-												<div class="doctor-slider__name">Александр Васильев</div>
-												<div class="doctor-slider__job">хирург-имплантолог</div>
-											</a>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="doctor-slider__item">
+                  <?php
 
-											<img src="https://centr-allon4.ru/wp-content/uploads/2023/09/kurochkin-exp.webp" width="300" height="300" alt="Максим Копылов" class="doctor-slider__img" loading="lazy" decoding="async">
-											<div class="doctor-slider__name">Константин Курочкин</div>
-											<div class="doctor-slider__job">Стоматолог-ортопед</div>
+                  // banner @468@
 
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="doctor-slider__item">
-											<a href="https://smile-at-once.ru/doctors/chernov-andrej-rastislavovich.html" target="_blank" rel="noopener" class="doctor-slider__link">
-												<img src="https://centr-allon4.ru/wp-content/uploads/2023/09/chernov-exp.webp" width="300" height="300" alt="Андрей Чернов" class="doctor-slider__img" loading="lazy" decoding="async">
-												<div class="doctor-slider__name">Андрей Чернов</div>
-												<div class="doctor-slider__job">стоматолог-ортопед</div>
-											</a>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="doctor-slider__item">
-											<a href="https://smile-at-once.ru/doctors/viktorenko-artem-yurievich.html" target="_blank" rel="noopener" class="doctor-slider__link">
-												<img src="https://centr-allon4.ru/wp-content/uploads/2023/09/viktorenko-exp.webp" width="300" height="300" alt="Артем Викторенко" class="doctor-slider__img" loading="lazy" decoding="async">
-												<div class="doctor-slider__name">Артем Викторенко</div>
-												<div class="doctor-slider__job">хирург-имплантолог</div>
-											</a>
-										</div>
+                  $page_id = 468;
+                  $page_content = get_post($page_id);
+                  if ($page_content) {
+                     echo apply_filters('the_content', $page_content->post_content);
+                  }
 
-									</div>
-								</div>
-							</div>
-							<div class="slider-arrow slider-arrow--prev"><span class="i i-left">&nbsp;</span></div>
-							<div class="slider-arrow slider-arrow--next"><span class="i i-right">&nbsp;</span></div>
-						</div>
-						<nav class="all-works" role="navigation">
-							<a class="all-works__btn" href="/eksperty-all-on-4/" title="Все врачи">Все врачи</a>
-						</nav>
+                  ?>
+
+
 					</div>
 
 					<?php

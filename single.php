@@ -7,13 +7,9 @@
  * @file           page.php
 
  */
-
 get_header(); ?>
-
-
 <main class="main-content inner" id="main-content" role="main">
 	<div class="main-content-inner">
-
 		<!--
 			<?php
 			if ( function_exists('yoast_breadcrumb') ) {
@@ -22,22 +18,16 @@ get_header(); ?>
 				');
 			}
 			?>
-		-->
 
 			<div class="heading">
 				<h1 class="title"><?php the_title(); ?></h1>
 			</div>
+			-->
 			<?php while ( have_posts() ) : the_post(); ?>
-			<div class="single-content">
-
-
+			<div class="single-content wysiwyg pb">
 				<?php the_content(); ?>
-
 			</div>
 			<?php endwhile; ?>
-
 	</div>
 </main>
-
-
 <?php get_footer(); ?>

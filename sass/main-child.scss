@@ -9,6 +9,12 @@ img {height: auto;}
 .hide {display: none;}
 .button {flex-shrink: 0;}
 
+.main-content-inner {
+   padding: 0 18px;
+}
+
+
+
 @import 'base/icons';
 @import 'base/variables';
 @import 'base/mixins';
@@ -43,6 +49,133 @@ img {height: auto;}
 @import 'modules/wpcf7';
 @import 'modules/all-works';
 @import 'modules/card';
+
+
+
+.single-content {
+
+   h1 {
+      @include res(l) {
+         font-size: 34px;
+      }
+   }
+
+   h2 {
+
+      @include res(l) {
+         font-size: 32px;
+      }
+   }
+
+   h3 {
+
+      @include res(l) {
+         font-size: 28px;
+      }
+   }
+/*
+   .aligncenter {
+      max-width: 1024px;
+      box-shadow: 0 0 40px rgba(0,0,0,0.4);
+      margin: 0 auto 30px;
+      display: block;
+      position: relative;
+      height: auto;
+      width: 100%;
+
+      + p {
+
+      }
+   }*/
+
+   img {
+      max-width: 1024px;
+      margin: 0 auto 30px;
+      height: auto;
+      display: block;
+      width: 100%;
+   }
+
+   .wp-caption {
+      margin: 0 auto 30px;
+      width: 100% !important;
+      max-width: 1024px;
+
+      img {
+         margin: 0 0 15px;
+      }
+
+      .wp-caption-text {
+         font-size: 13px;
+         text-align: center;
+         color: #595959;
+      }
+   }
+
+   ol {
+      //list-style-type: decimal;
+      margin-bottom: 36px;
+      padding: 0 0 0 20px;
+
+      li {
+         margin-bottom: 18px;
+      }
+   }
+
+   ul {
+      list-style-type: disc;
+      padding-left: 18px;
+      margin-bottom: 30px;
+
+      li {
+         margin-bottom: 18px;
+      }
+   }
+
+   .paragraph--type--link-list .links-list {
+      margin: 0;
+      padding: 0;
+
+      li {
+         margin-bottom: 0;
+         list-style: none;
+      }
+   }
+
+   ul + p {
+      padding-top: 10px;
+   }
+
+   .video-container {
+      position: relative;
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding-bottom: 55.25%;
+      height: 0;
+      overflow: hidden;
+   }
+
+   .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+   }
+
+
+
+
+
+
+}
+
+
+
+
+
 
 .page-template section.paragraph .top-padding-18 {padding-top: 18px;}
 .page-template section.paragraph .bottom-padding-18 {padding-bottom: 18px;}
@@ -195,6 +328,10 @@ img {height: auto;}
 		font-size: 16px;
 		color: #6f6f6f;
 	}
+
+   br {
+      display: none;
+   }
 }
 
 
@@ -203,8 +340,13 @@ img {height: auto;}
    height: 50px;
    overflow: hidden;
 
+   @include res(s) {
+      width: 55px;
+      height: 40px;
+   }
+
    img {
-      width: 550%;
+      //width: 550%;
       max-width: inherit;
       height: 100%;
    }
@@ -214,6 +356,11 @@ img {height: auto;}
    margin: 0 0 0 35px;
    height: 55px;
    overflow: hidden;
+
+   @include res(s) {
+      margin: 0 0 0 18px;
+      height: 40px;
+   }
 }
 .logo__smile img {
    height: 100%;
