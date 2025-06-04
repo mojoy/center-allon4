@@ -72,15 +72,32 @@
       <div class="bottom-header__wrapper">
          <div class="bottom-header inner center-align">
             <a href="https://smile-at-once.ru/" title="" target="_blank" class="logo__smile">
-               <img src="https://smile-at-once.ru/data/teeth_new/img/logo.svg" alt="Новые зубы и улыбка сразу" title="Новые зубы и улыбка сразу" width="183" height="40" class="top-panel__logo-pc" itemprop="logo image" loading="auto">
+               <img src="https://smile-at-once.ru/data/teeth_new/img/logo.svg" style="width: 100%;" alt="Новые зубы и улыбка сразу" title="Новые зубы и улыбка сразу" width="183" height="40" class="top-panel__logo-pc" itemprop="logo image" loading="auto">
             </a>
-            <a class="bottom-header__logo spacing" href="/">
+            <a class="bottom-header__logo spacing" href="/" style="margin-left: 10px;">
                <img class="logo logo-large bottom-header__logo--desktop image" src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="<?php bloginfo('name')?>" loading="auto" />
                <img class="logo logo-medium bottom-header__logo--mobile image" src="<?php bloginfo('template_url'); ?>/img/logo-mobile.svg" alt="<?php bloginfo('name')?>" loading="auto" />
                <div class="visually-hidden">
                   Nobel Biocare
                </div>
             </a>
+			<div class="assoc">
+				 <img class="" src="<?php bloginfo('template_url'); ?>/img/odobreno-assoc.webp" alt="Одобрены ассоциацией стоматологов России" loading="auto" loading="auto" />
+			</div>
+            <style>
+            .assoc {margin: 0 0 0 auto;max-width: 185px;margin-left: 10px;}
+                @media (max-width: 768px) {
+                  .assoc {
+                    max-width: 150px;
+                  }
+                }
+                @media (max-width: 480px) {
+                  .assoc {
+                    max-width: 120px;
+                  }
+                }
+            </style>
+      
 
             <!--
 				<div class="bottom-header__content">
